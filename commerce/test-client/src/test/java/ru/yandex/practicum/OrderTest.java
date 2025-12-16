@@ -62,7 +62,7 @@ public class OrderTest {
         assertEquals(shoppingCartDto.getProducts(), orderDto.getProducts());
         assertEquals(OrderState.NEW, orderDto.getState());
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("\nЖдем немного ... и проверяем заказ:\n");
         orderDto = orderClient.getOrdersByUsername(username).getFirst();
@@ -73,13 +73,13 @@ public class OrderTest {
         assertNotNull(orderDto.getDeliveryId());
         assertNotNull(orderDto.getPaymentId());
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("\nКлиент оплачивает заказ и платежный шлюз вызывает POST /api/v1/payment/success ... ");
         paymentClient.successfulPaymentForOrder(orderDto.getOrderId());
         System.out.print("[OK]\nЖдем немного ... ");
 
-        Thread.sleep(1000);
+        Thread.sleep(1500);
 
         System.out.print("и проверяем заказ: \n");
         orderDto = orderClient.getOrdersByUsername(username).getFirst();
@@ -90,13 +90,13 @@ public class OrderTest {
         assertNotNull(orderDto.getDeliveryId());
         assertNotNull(orderDto.getPaymentId());
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("\nСлужба доставки забрала товары со склада и вызывает POST /api/v1/delivery/start ");
         deliveryClient.pickedProductsToDelivery(orderDto.getOrderId());
         System.out.print("[OK]\nЖдем немного ... ");
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("и проверяем заказ: \n");
         orderDto = orderClient.getOrdersByUsername(username).getFirst();
@@ -107,13 +107,13 @@ public class OrderTest {
         assertNotNull(orderDto.getDeliveryId());
         assertNotNull(orderDto.getPaymentId());
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("\nДоставка успешно завершена, вызывается POST /api/v1/delivery/successful ");
         deliveryClient.successfulDeliveryForOrder(orderDto.getOrderId());
         System.out.print("[OK]\nЖдем немного ... ");
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("и проверяем заказ: \n");
         orderDto = orderClient.getOrdersByUsername(username).getFirst();
@@ -124,13 +124,13 @@ public class OrderTest {
         assertNotNull(orderDto.getDeliveryId());
         assertNotNull(orderDto.getPaymentId());
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("\nСлужба контроля получила подтверждение клиента, вызывает POST /api/v1/order/completed ");
         orderClient.completedOrder(orderDto.getOrderId());
         System.out.print("[OK]\nЖдем немного ... ");
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("и проверяем заказ: \n");
         orderDto = orderClient.getOrdersByUsername(username).getFirst();
@@ -155,7 +155,7 @@ public class OrderTest {
         assertEquals(shoppingCartDto.getProducts(), orderDto.getProducts());
         assertEquals(OrderState.NEW, orderDto.getState());
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("\nЖдем немного ... и проверяем заказ:\n");
         orderDto = orderClient.getOrdersByUsername(username).getFirst();
@@ -166,13 +166,13 @@ public class OrderTest {
         assertNotNull(orderDto.getDeliveryId());
         assertNotNull(orderDto.getPaymentId());
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("\nКлиент оплачивает заказ и платежный шлюз вызывает POST /api/v1/payment/success ... ");
         paymentClient.successfulPaymentForOrder(orderDto.getOrderId());
         System.out.print("[OK]\nЖдем немного ... ");
 
-        Thread.sleep(1000);
+        Thread.sleep(1500);
 
         System.out.print("и проверяем заказ: \n");
         orderDto = orderClient.getOrdersByUsername(username).getFirst();
@@ -183,13 +183,13 @@ public class OrderTest {
         assertNotNull(orderDto.getDeliveryId());
         assertNotNull(orderDto.getPaymentId());
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("\nСлужба доставки забрала товары со склада и вызывает POST /api/v1/delivery/start ");
         deliveryClient.pickedProductsToDelivery(orderDto.getOrderId());
         System.out.print("[OK]\nЖдем немного ... ");
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("и проверяем заказ: \n");
         orderDto = orderClient.getOrdersByUsername(username).getFirst();
@@ -200,13 +200,13 @@ public class OrderTest {
         assertNotNull(orderDto.getDeliveryId());
         assertNotNull(orderDto.getPaymentId());
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("\nДоставка отменилась, клиент отказался, вызывается POST /api/v1/delivery/failed ");
         deliveryClient.failedDeliveryForOrder(orderDto.getOrderId());
         System.out.print("[OK]\nЖдем немного ... ");
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("и проверяем заказ: \n");
         orderDto = orderClient.getOrdersByUsername(username).getFirst();
@@ -217,13 +217,13 @@ public class OrderTest {
         assertNotNull(orderDto.getDeliveryId());
         assertNotNull(orderDto.getPaymentId());
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("\nСлужба контроля подтверждает отмену заказа, вызывает POST /api/v1/order/return ");
         orderClient.returnProductsInOrder(orderDto.getOrderId());
         System.out.print("[OK]\nЖдем немного ... ");
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("и проверяем заказ: \n");
         orderDto = orderClient.getOrdersByUsername(username).getFirst();
@@ -248,7 +248,7 @@ public class OrderTest {
         assertEquals(shoppingCartDto.getProducts(), orderDto.getProducts());
         assertEquals(OrderState.NEW, orderDto.getState());
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("\nЖдем немного ... и проверяем заказ:\n");
         orderDto = orderClient.getOrdersByUsername(username).getFirst();
@@ -259,13 +259,13 @@ public class OrderTest {
         assertNotNull(orderDto.getDeliveryId());
         assertNotNull(orderDto.getPaymentId());
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("\nКлиент НЕ оплачивает заказ и платежный шлюз вызывает POST /api/v1/payment/failed ... ");
         paymentClient.failedPaymentForOrder(orderDto.getOrderId());
         System.out.print("[OK]\nЖдем немного ... ");
 
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
         System.out.print("и проверяем заказ: \n");
         orderDto = orderClient.getOrdersByUsername(username).getFirst();
