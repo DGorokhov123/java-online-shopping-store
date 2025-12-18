@@ -1,7 +1,8 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ShoppingStoreApplication" type="Application" factoryName="Application" singleton="true" nameIsGenerated="true">
-    <option name="MAIN_CLASS_NAME" value="ru.yandex.practicum.ShoppingStoreApplication" />
+  <configuration default="false" name="ShoppingStoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
     <module name="shopping-store" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="ru.yandex.practicum.ShoppingStoreApplication" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="ru.yandex.practicum.*" />

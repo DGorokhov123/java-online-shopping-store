@@ -1,7 +1,8 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="PaymentApplication" type="Application" factoryName="Application" singleton="true" nameIsGenerated="true">
-    <option name="MAIN_CLASS_NAME" value="ru.yandex.practicum.PaymentApplication" />
+  <configuration default="false" name="PaymentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
     <module name="payment" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="ru.yandex.practicum.PaymentApplication" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="ru.yandex.practicum.*" />

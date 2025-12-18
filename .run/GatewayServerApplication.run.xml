@@ -1,8 +1,8 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ShoppingCartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+  <configuration default="false" name="GatewayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
     <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-    <module name="shopping-cart" />
-    <option name="SPRING_BOOT_MAIN_CLASS" value="ru.yandex.practicum.ShoppingCartApplication" />
+    <module name="gateway" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="ru.yandex.practicum.GatewayServerApplication" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="ru.yandex.practicum.*" />

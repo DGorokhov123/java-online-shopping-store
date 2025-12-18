@@ -1,7 +1,8 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="DeliveryApplication" type="Application" factoryName="Application" singleton="true" nameIsGenerated="true">
-    <option name="MAIN_CLASS_NAME" value="ru.yandex.practicum.DeliveryApplication" />
+  <configuration default="false" name="DeliveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
     <module name="delivery" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="ru.yandex.practicum.DeliveryApplication" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="ru.yandex.practicum.*" />

@@ -50,7 +50,7 @@ public interface ShoppingCartApi {
     @GetMapping("/api/v1/shopping-cart")
     @ResponseStatus(HttpStatus.OK)
     ShoppingCartDto getCartByUsername(
-            @RequestParam(required = true) @ValidUsername String username
+            @RequestParam(required = false) @ValidUsername String username
     );
 
 }
