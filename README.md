@@ -42,7 +42,7 @@ https://microservices.io/patterns/data/transactional-outbox.html
 # Инфраструктурные модули (папка /infra)
 
 Используются:
-- String Boot
+- Spring Boot
 - Spring Cloud Eureka server
 - Spring Cloud Config server
 - Spring Cloud Gateway server
@@ -70,7 +70,7 @@ https://microservices.io/patterns/data/transactional-outbox.html
 
 Используются:
 - Java ٩(◕‿◕｡)۶
-- String Boot
+- Spring Boot
 - Spring MVC (REST)
 - Spring Data JPA (Hibernate)
 - Spring Cloud Discovery and Configuration
